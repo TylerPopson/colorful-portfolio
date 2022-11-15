@@ -12,7 +12,7 @@ function mouse(event: MouseEvent | TouchEvent) {
       topDiv.style.width = event.x.toString() + "px";
     } else {
       if (event.touches.item(0) != null) {
-        topDiv.style.width = event.touches.item(0).clientX.toString() + "px";
+        topDiv.style.width = event.touches.item(0)?.clientX.toString() + "px";
       }
     }
   }
